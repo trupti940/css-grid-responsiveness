@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        body{
+            margin:auto;
+            height:0;
+            padding:25px;
+        }
+        .container {
+            border: 2px dotted black;
+            background-color: yellow;
+            padding: 20px;
+        }
+        .item {
+            display: flex;
+            background-color: white;
+            border: 1px dotted black;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        .image {
+            background-color: blue;
+            width: 150px;
+            height: 100px;
+            margin-right: 10px;
+            text-align: center;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px dashed black;
+        }
+        .content {
+            flex: 1;
+        }
+        .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            border: 2px dashed black;
+            padding: 5px;
+        }
+        .description {
+            border: 2px dashed black;
+            padding: 5px;
+        }
+        .read-more {
+            color: blue;
+            text-decoration: underline;
+            border: 2px dashed blue;
+            padding: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="image">Image</div>
+            <div class="content">
+                <div class="title">Title</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.
+                </div>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">Image</div>
+            <div class="content">
+                <div class="title">Title</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.
+                </div>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">Image</div>
+            <div class="content">
+                <div class="title">Title</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.
+                </div>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">Image</div>
+            <div class="content">
+                <div class="title">Title</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.
+                </div>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
